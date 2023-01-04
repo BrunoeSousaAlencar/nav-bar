@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+:root{
+    --texto1:#251C3B;
+    --texto2:#F29F05;
+    --texto3:#7D7C7B;
+    --borda:#53A677;
+    --botoes:#18401B;
+    --bg:#F2EEE9;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.nav{
+    gap: 2rem;
+    align-items: center;
+}
+
+#logo{
+    margin-top: 10px;
+}
+
+.nav li{
+    color: var(--texto3);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: var(--texto3);
+}
+
+.login .botao-header{
+    background-color: var(--botoes);
+    color: var(--bg);
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 3px;
+}
+
+.login .botao-header:hover{
+    background-color: #407a44;
+}
+
+.dropdown-menu{
+    width: 450px;
+    height: 350px;
+    border: none;
+    
+}
+
+.p-drop{
+    color: #718faa;
+    position: relative;
+    left: 45px;
+    margin: -15px;
+    padding-bottom: 20px;
+}
+
+.h2-drop{
+    position: relative;
+    top: 5px; left: 5px;
+    color: var(--texto1);
+    font-weight: 700;
+}
+
+#botao-menu{
+    display: none;
+}
+
+@media (max-width: 900px){
+
+    #botao-menu{
+        display: block;
+        cursor: pointer;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    #botao-menu img{
+        width: 50px;
+    }
+    
+    .nav, .login{
+        display: none;
+    }
+
+    header{
+        justify-content: space-between;
+        margin: 0 30px;
+    }
+
+}
