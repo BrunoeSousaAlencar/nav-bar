@@ -44,6 +44,10 @@ main{
     border-radius: 5px;
     padding: 15px 30px;
 }
+#texto-principal button:hover{
+    background-color: #407a44;
+}
+
 
 #img-principal{
     width: 350px;
